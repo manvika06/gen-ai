@@ -1,0 +1,195 @@
+/* styles.css - Styles for the Vehicle Diagnostics System */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#app {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#answer-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    min-height: 50px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#data-table td[style*="background-color: #ffcccc"] {
+    background-color: #ffcccc !important;
+    color: #cc0000 !important;
+}
+
+#data-table td {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#data-table td[style*="background-color: #ffcccc"] {
+    font-weight: bold;
+}
+
+#stop-speaking {
+    background-color: #ff4444;
+    color: white;
+    margin-left: 10px;
+}
+
+#stop-speaking:disabled {
+    background-color: #ffaaaa;
+    cursor: not-allowed;
+}
+
+
+
+#content-container {
+    display: flex;
+    width: 100%;
+    height: 90vh; /* Adjust the height based on your layout needs */
+}
+
+#data-alerts-container {
+    flex: 3; /* Takes 75% of the space */
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling within the section if content is too long */
+    border-right: 1px solid #ccc; /* Adds a visual separation between the sections */
+}
+
+#voice-command-container {
+    flex: 1; /* Takes 25% of the space */
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling if content is too long */
+}
+
+/* Improving table display */
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#data-table th, #data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#data-table th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+h1, h2 {
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#alerts-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.alert {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#current-status {
+    font-weight: bold;
+}
+
+.status-idle {
+    color: #6c757d;
+}
+
+.status-running {
+    color: #28a745;
+}
+
+.status-error {
+    color: #dc3545;
+}
+
+#recording-status {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#command-result {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+#current-row-data {
+    overflow-x: auto; /* Allows horizontal scrolling if the table is too wide */
+}
+
+#data-table {
+    width: 100%;
+    table-layout: fixed; /* Helps keep columns a fixed size */
+    border-collapse: collapse; /* Optional: for styling purposes */
+}
+
+#data-table th, #data-table td {
+    border: 1px solid #ccc; /* Adds borders to cells for better visibility */
+    padding: 8px;
+    text-align: left;
+    overflow-wrap: break-word; /* Ensures text within cells does not overflow */
+}
+
+#data-table thead {
+    background-color: #f4f4f4; /* Styling the header with a different color */
+    font-weight: bold;
+}
+
+#data-table tbody tr:nth-child(odd) {
+    background-color: #fafafa; /* Zebra striping for rows */
+}
+
+

@@ -1,0 +1,38 @@
+Automobile Diagnostics Manual (Simplified)
+
+1. ENGINE_COOLANT_TEMP: Normal < 90°C. If higher, check coolant and cooling system.
+
+2. FUEL_LEVEL: Fuel level less than 20 is a lower limit. Normal 0-100%. Above 90% means tank nearly full.
+
+3. ENGINE_LOAD: Normal 0-100%. If > 90%, check air filter and sensors.
+
+4. ENGINE_RPM: Idle normal > 750 RPM. If lower, risk of stalling.
+
+5. INTAKE_MANIFOLD_PRESSURE: Normal 10-20 kPa at idle. If > 18 kPa, check for leaks.
+
+6. MAF: Normal 2-7 g/s at idle. If > 3.5 g/s, check for leaks or faulty sensor.
+
+7. TIMING_ADVANCE: Normal 0-40% at idle. If > 60%, check timing system.
+
+8. EQUIV_RATIO: Normal 0.9-1.1. If < 0.9, check for leaks and sensors.
+
+9. DTC_NUMBER: Any code needs investigation.
+
+10. THROTTLE_POS: Normal 0-100%. If > 19% at idle, check throttle system.
+
+11. AIR_INTAKE_TEMP: Normal up to 32°C. If higher, check airflow and cooling.
+
+12. SPEED: Should be 0 when stationary. If not, check sensors.
+
+13. ENGINE_RUNTIME: Shows how long engine has run.
+
+14. Short Term Fuel Trim Bank 1: Normal -10% to +10%. If > 5%, check for leaks and fuel system.
+
+Advice: Regular maintenance helps. For persistent issues, seek professional help.
+
+Below this , we will be adding Alerts and Processed Data tables in that order
+Each row in processed data represents 4s. If some one asks what's the maximum engine temperature in last 20seconds, then you look at last 5 rowas , as each row is 4s and give the maximum engine temperature in those 5 rows. 
+
+If they ask for what is the latest alert , then you look for the last row in Alerts and respond that. 
+
+When asked for latest or current engine temperature or fuel left , asnwer from processed Data and not alerts table. 
